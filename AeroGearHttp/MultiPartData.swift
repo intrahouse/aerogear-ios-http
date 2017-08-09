@@ -16,7 +16,6 @@
 */
 
 import Foundation
-
 /**
 Represents a multipart object containing a file plus metadata to be processed during upload.
 */

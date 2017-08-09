@@ -164,19 +164,23 @@ open class HttpRequestSerializer:  RequestSerializer {
             var sectionData: Data?
             var sectionType: String?
             var sectionFilename = ""
+            var multipartName:String? = nil
             
             if value is MultiPartData {
                 let multiData = value as! MultiPartData
                 sectionData = multiData.data as Data
                 sectionType = multiData.mimeType
                 sectionFilename = " filename=\"\(multiData.filename)\""
-            } else {
+                multipartName = multiData.name
+            }
+            else
+            {
                 sectionData = "\(value)".data(using: String.Encoding.utf8)
             }
             
             data.append(prefixData!)
             
-            let sectionDisposition = "Content-Disposition: form-data; name=\"\(key)\";\(sectionFilename)\r\n".data(using: String.Encoding.utf8)
+            let sectionDisposition = "Content-Disposition: form-data; name=\"\(multipartName ?? key)\";\(sectionFilename)\r\n".data(using: String.Encoding.utf8)
             data.append(sectionDisposition!)
             
             if let type = sectionType {
