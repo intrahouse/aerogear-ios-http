@@ -85,6 +85,7 @@ open class Http {
     var requestSerializer: RequestSerializer
     var responseSerializer: ResponseSerializer
     open var authzModule:  AuthzModule?
+    open var disableServerTrust: Bool = false
     
     fileprivate var delegate: SessionDelegate
     
@@ -109,8 +110,28 @@ open class Http {
         self.responseSerializer = responseSerializer
     }
     
+    public init(baseURL: String? = nil,
+                sessionConfig: URLSessionConfiguration = URLSessionConfiguration.default,
+                requestSerializer: RequestSerializer = JsonRequestSerializer(),
+                responseSerializer: ResponseSerializer = JsonResponseSerializer(),
+                disableServerTrust: Bool) {
+        self.baseURL = baseURL
+        self.delegate = SessionDelegate()
+        self.session = URLSession(configuration: sessionConfig, delegate: self.delegate, delegateQueue: OperationQueue.main)
+        self.requestSerializer = requestSerializer
+        self.responseSerializer = responseSerializer
+        self.disableServerTrust = disableServerTrust
+        self.delegate.disableServerTrust = disableServerTrust
+    }
+    
     deinit {
         self.session.finishTasksAndInvalidate()
+    }
+    
+    open func activateDisableServerTrust(){
+        disableServerTrust = true
+        self.delegate = SessionDelegate()
+
     }
     
     /**
@@ -324,7 +345,7 @@ open class Http {
     class SessionDelegate: NSObject, URLSessionDelegate,  URLSessionTaskDelegate, URLSessionDataDelegate, URLSessionDownloadDelegate {
         
         fileprivate var delegates: [Int:  TaskDelegate]
-        
+        open var disableServerTrust: Bool = false
         fileprivate subscript(task: URLSessionTask?) -> TaskDelegate? {
             get {
                 guard let task = task else {
@@ -351,7 +372,13 @@ open class Http {
         }
         
         func urlSession(_ session: URLSession, didReceive challenge: URLAuthenticationChallenge, completionHandler: @escaping (URLSession.AuthChallengeDisposition, URLCredential?) -> Void) {
-            completionHandler(.performDefaultHandling, nil)
+            if (disableServerTrust) {
+                print("SERVER TRUST!!")
+                completionHandler(Foundation.URLSession.AuthChallengeDisposition.useCredential, URLCredential(trust:challenge.protectionSpace.serverTrust!))
+            } else {
+                print("Normal completionHandler")
+                completionHandler(.performDefaultHandling, nil)
+            }
         }
         
         func urlSessionDidFinishEvents(forBackgroundURLSession session: URLSession) {
