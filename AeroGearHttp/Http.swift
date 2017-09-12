@@ -373,10 +373,8 @@ open class Http {
         
         func urlSession(_ session: URLSession, didReceive challenge: URLAuthenticationChallenge, completionHandler: @escaping (URLSession.AuthChallengeDisposition, URLCredential?) -> Void) {
             if (disableServerTrust) {
-                print("SERVER TRUST!!")
                 completionHandler(Foundation.URLSession.AuthChallengeDisposition.useCredential, URLCredential(trust:challenge.protectionSpace.serverTrust!))
             } else {
-                print("Normal completionHandler")
                 completionHandler(.performDefaultHandling, nil)
             }
         }
