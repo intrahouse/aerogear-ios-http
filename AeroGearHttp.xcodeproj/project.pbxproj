@@ -27,17 +27,17 @@
 		6F53F67F19ED0FEF00DCFC72 /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F53F67D19ED0FEF00DCFC72 /* Utils.swift */; };
 		6FCD63A31A166FB60020E52D /* AeroGearHttp.framework in Copy Frameworks */ = {isa = PBXBuildFile; fileRef = 488B6B5C196B19BC000297C9 /* AeroGearHttp.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		9738481B3E5AD4FE9A3351FD /* Pods_AeroGearHttpTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C87016D454B37752E459070D /* Pods_AeroGearHttpTests.framework */; };
-		CE740E3E1FDB4DE3004F4498 /* AeroGearHttpTV.h in Headers */ = {isa = PBXBuildFile; fileRef = CE740E3C1FDB4DE3004F4498 /* AeroGearHttpTV.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		CE740E421FDB4DF3004F4498 /* RequestSerializer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4833049619AF2D43002F8DA9 /* RequestSerializer.swift */; };
-		CE740E431FDB4DF3004F4498 /* ResponseSerializer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4833049719AF2D43002F8DA9 /* ResponseSerializer.swift */; };
-		CE740E441FDB4DF3004F4498 /* HttpRequestSerializer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F53F67C19ED0FEF00DCFC72 /* HttpRequestSerializer.swift */; };
-		CE740E451FDB4DF3004F4498 /* JsonRequestSerializer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4833049419AF2D43002F8DA9 /* JsonRequestSerializer.swift */; };
-		CE740E461FDB4DF3004F4498 /* JsonResponseSerializer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4833049519AF2D43002F8DA9 /* JsonResponseSerializer.swift */; };
-		CE740E471FDB4DF3004F4498 /* StringResponseSerializer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48BC695519BA0BD700497B4E /* StringResponseSerializer.swift */; };
-		CE740E481FDB4DF3004F4498 /* MultiPartData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F24AEB519CFFE6D002BB280 /* MultiPartData.swift */; };
-		CE740E491FDB4DF3004F4498 /* AuthzModule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48DB692319C8864A00452837 /* AuthzModule.swift */; };
-		CE740E4A1FDB4DF3004F4498 /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F53F67D19ED0FEF00DCFC72 /* Utils.swift */; };
-		CE740E4B1FDB4DF3004F4498 /* Http.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48BC695919BA0BE400497B4E /* Http.swift */; };
+		CE740E5A1FDB51BE004F4498 /* RequestSerializer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4833049619AF2D43002F8DA9 /* RequestSerializer.swift */; };
+		CE740E5B1FDB51BE004F4498 /* ResponseSerializer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4833049719AF2D43002F8DA9 /* ResponseSerializer.swift */; };
+		CE740E5C1FDB51BE004F4498 /* HttpRequestSerializer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F53F67C19ED0FEF00DCFC72 /* HttpRequestSerializer.swift */; };
+		CE740E5D1FDB51BE004F4498 /* JsonRequestSerializer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4833049419AF2D43002F8DA9 /* JsonRequestSerializer.swift */; };
+		CE740E5E1FDB51BE004F4498 /* JsonResponseSerializer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4833049519AF2D43002F8DA9 /* JsonResponseSerializer.swift */; };
+		CE740E5F1FDB51BE004F4498 /* StringResponseSerializer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48BC695519BA0BD700497B4E /* StringResponseSerializer.swift */; };
+		CE740E601FDB51BE004F4498 /* MultiPartData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F24AEB519CFFE6D002BB280 /* MultiPartData.swift */; };
+		CE740E611FDB51BE004F4498 /* AuthzModule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48DB692319C8864A00452837 /* AuthzModule.swift */; };
+		CE740E621FDB51BE004F4498 /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F53F67D19ED0FEF00DCFC72 /* Utils.swift */; };
+		CE740E631FDB51BE004F4498 /* Http.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48BC695919BA0BE400497B4E /* Http.swift */; };
+		CE740E641FDB51E4004F4498 /* AeroGearHttp.h in Headers */ = {isa = PBXBuildFile; fileRef = 488B6B61196B19BC000297C9 /* AeroGearHttp.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -109,9 +109,7 @@
 		6F53F67D19ED0FEF00DCFC72 /* Utils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
 		9F1E441EC283CBBA8D06979E /* Pods-AeroGearHttpTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AeroGearHttpTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-AeroGearHttpTests/Pods-AeroGearHttpTests.release.xcconfig"; sourceTree = "<group>"; };
 		C87016D454B37752E459070D /* Pods_AeroGearHttpTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AeroGearHttpTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		CE740E3A1FDB4DE3004F4498 /* AeroGearHttpTV.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = AeroGearHttpTV.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		CE740E3C1FDB4DE3004F4498 /* AeroGearHttpTV.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AeroGearHttpTV.h; sourceTree = "<group>"; };
-		CE740E3D1FDB4DE3004F4498 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CE740E511FDB518C004F4498 /* AeroGearHttp_tvOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = AeroGearHttp_tvOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D696C567BE0A5E985DF7CE97 /* Pods_AeroGearHttp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AeroGearHttp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D846FE9C035DEFD73DA31F8C /* Pods-AeroGearHttpTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AeroGearHttpTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-AeroGearHttpTests/Pods-AeroGearHttpTests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -133,7 +131,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		CE740E361FDB4DE3004F4498 /* Frameworks */ = {
+		CE740E4D1FDB518C004F4498 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -157,7 +155,6 @@
 			children = (
 				488B6B5E196B19BC000297C9 /* AeroGearHttp */,
 				488B6B6B196B19BC000297C9 /* AeroGearHttpTests */,
-				CE740E3B1FDB4DE3004F4498 /* AeroGearHttpTV */,
 				488B6B5D196B19BC000297C9 /* Products */,
 				B34A669366F30C6D15DFDBC3 /* Pods */,
 				449631717FFEF6F99F72E072 /* Frameworks */,
@@ -169,7 +166,7 @@
 			children = (
 				488B6B5C196B19BC000297C9 /* AeroGearHttp.framework */,
 				488B6B67196B19BC000297C9 /* AeroGearHttpTests.xctest */,
-				CE740E3A1FDB4DE3004F4498 /* AeroGearHttpTV.framework */,
+				CE740E511FDB518C004F4498 /* AeroGearHttp_tvOS.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -232,15 +229,6 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
-		CE740E3B1FDB4DE3004F4498 /* AeroGearHttpTV */ = {
-			isa = PBXGroup;
-			children = (
-				CE740E3C1FDB4DE3004F4498 /* AeroGearHttpTV.h */,
-				CE740E3D1FDB4DE3004F4498 /* Info.plist */,
-			);
-			path = AeroGearHttpTV;
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -252,11 +240,11 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		CE740E371FDB4DE3004F4498 /* Headers */ = {
+		CE740E4E1FDB518C004F4498 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CE740E3E1FDB4DE3004F4498 /* AeroGearHttpTV.h in Headers */,
+				CE740E641FDB51E4004F4498 /* AeroGearHttp.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -306,22 +294,22 @@
 			productReference = 488B6B67196B19BC000297C9 /* AeroGearHttpTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		CE740E391FDB4DE3004F4498 /* AeroGearHttpTV */ = {
+		CE740E501FDB518C004F4498 /* AeroGearHttp-tvOS */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = CE740E3F1FDB4DE3004F4498 /* Build configuration list for PBXNativeTarget "AeroGearHttpTV" */;
+			buildConfigurationList = CE740E561FDB518C004F4498 /* Build configuration list for PBXNativeTarget "AeroGearHttp-tvOS" */;
 			buildPhases = (
-				CE740E351FDB4DE3004F4498 /* Sources */,
-				CE740E361FDB4DE3004F4498 /* Frameworks */,
-				CE740E371FDB4DE3004F4498 /* Headers */,
-				CE740E381FDB4DE3004F4498 /* Resources */,
+				CE740E4C1FDB518C004F4498 /* Sources */,
+				CE740E4D1FDB518C004F4498 /* Frameworks */,
+				CE740E4E1FDB518C004F4498 /* Headers */,
+				CE740E4F1FDB518C004F4498 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = AeroGearHttpTV;
-			productName = AeroGearHttpTV;
-			productReference = CE740E3A1FDB4DE3004F4498 /* AeroGearHttpTV.framework */;
+			name = "AeroGearHttp-tvOS";
+			productName = "AeroGearHttp-tvOS";
+			productReference = CE740E511FDB518C004F4498 /* AeroGearHttp_tvOS.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
@@ -342,7 +330,7 @@
 						CreatedOnToolsVersion = 6.0;
 						LastSwiftMigration = 0800;
 					};
-					CE740E391FDB4DE3004F4498 = {
+					CE740E501FDB518C004F4498 = {
 						CreatedOnToolsVersion = 9.1;
 						DevelopmentTeam = C9BHKKLW4F;
 						ProvisioningStyle = Automatic;
@@ -363,7 +351,7 @@
 			targets = (
 				488B6B5B196B19BC000297C9 /* AeroGearHttp */,
 				488B6B66196B19BC000297C9 /* AeroGearHttpTests */,
-				CE740E391FDB4DE3004F4498 /* AeroGearHttpTV */,
+				CE740E501FDB518C004F4498 /* AeroGearHttp-tvOS */,
 			);
 		};
 /* End PBXProject section */
@@ -383,7 +371,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		CE740E381FDB4DE3004F4498 /* Resources */ = {
+		CE740E4F1FDB518C004F4498 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -477,20 +465,20 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		CE740E351FDB4DE3004F4498 /* Sources */ = {
+		CE740E4C1FDB518C004F4498 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CE740E431FDB4DF3004F4498 /* ResponseSerializer.swift in Sources */,
-				CE740E481FDB4DF3004F4498 /* MultiPartData.swift in Sources */,
-				CE740E4A1FDB4DF3004F4498 /* Utils.swift in Sources */,
-				CE740E471FDB4DF3004F4498 /* StringResponseSerializer.swift in Sources */,
-				CE740E441FDB4DF3004F4498 /* HttpRequestSerializer.swift in Sources */,
-				CE740E421FDB4DF3004F4498 /* RequestSerializer.swift in Sources */,
-				CE740E451FDB4DF3004F4498 /* JsonRequestSerializer.swift in Sources */,
-				CE740E491FDB4DF3004F4498 /* AuthzModule.swift in Sources */,
-				CE740E461FDB4DF3004F4498 /* JsonResponseSerializer.swift in Sources */,
-				CE740E4B1FDB4DF3004F4498 /* Http.swift in Sources */,
+				CE740E5B1FDB51BE004F4498 /* ResponseSerializer.swift in Sources */,
+				CE740E601FDB51BE004F4498 /* MultiPartData.swift in Sources */,
+				CE740E621FDB51BE004F4498 /* Utils.swift in Sources */,
+				CE740E5F1FDB51BE004F4498 /* StringResponseSerializer.swift in Sources */,
+				CE740E5C1FDB51BE004F4498 /* HttpRequestSerializer.swift in Sources */,
+				CE740E5A1FDB51BE004F4498 /* RequestSerializer.swift in Sources */,
+				CE740E5D1FDB51BE004F4498 /* JsonRequestSerializer.swift in Sources */,
+				CE740E611FDB51BE004F4498 /* AuthzModule.swift in Sources */,
+				CE740E5E1FDB51BE004F4498 /* JsonResponseSerializer.swift in Sources */,
+				CE740E631FDB51BE004F4498 /* Http.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -696,7 +684,7 @@
 			};
 			name = Release;
 		};
-		CE740E401FDB4DE3004F4498 /* Debug */ = {
+		CE740E571FDB518C004F4498 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CLANG_ANALYZER_NONNULL = YES;
@@ -719,22 +707,22 @@
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				GCC_C_LANGUAGE_STANDARD = gnu11;
-				INFOPLIST_FILE = AeroGearHttpTV/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/AeroGearHttp/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MTL_ENABLE_DEBUG_INFO = YES;
-				PRODUCT_BUNDLE_IDENTIFIER = com.intrahouse.no.AeroGearHttpTV;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.intrahouse.no.AeroGearHttp-tvOS";
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SDKROOT = appletvos;
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = 3;
-				TVOS_DEPLOYMENT_TARGET = 11.0;
+				TVOS_DEPLOYMENT_TARGET = 11.1;
 			};
 			name = Debug;
 		};
-		CE740E411FDB4DE3004F4498 /* Release */ = {
+		CE740E581FDB518C004F4498 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CLANG_ANALYZER_NONNULL = YES;
@@ -758,18 +746,18 @@
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				GCC_C_LANGUAGE_STANDARD = gnu11;
-				INFOPLIST_FILE = AeroGearHttpTV/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/AeroGearHttp/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MTL_ENABLE_DEBUG_INFO = NO;
-				PRODUCT_BUNDLE_IDENTIFIER = com.intrahouse.no.AeroGearHttpTV;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.intrahouse.no.AeroGearHttp-tvOS";
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SDKROOT = appletvos;
 				SKIP_INSTALL = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = 3;
-				TVOS_DEPLOYMENT_TARGET = 11.0;
+				TVOS_DEPLOYMENT_TARGET = 11.1;
 			};
 			name = Release;
 		};
@@ -803,11 +791,11 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		CE740E3F1FDB4DE3004F4498 /* Build configuration list for PBXNativeTarget "AeroGearHttpTV" */ = {
+		CE740E561FDB518C004F4498 /* Build configuration list for PBXNativeTarget "AeroGearHttp-tvOS" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				CE740E401FDB4DE3004F4498 /* Debug */,
-				CE740E411FDB4DE3004F4498 /* Release */,
+				CE740E571FDB518C004F4498 /* Debug */,
+				CE740E581FDB518C004F4498 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
